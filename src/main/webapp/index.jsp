@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -77,11 +78,6 @@
                             <%--                            треугольник--%>
                             <polygon class="svg-figure triangle-figure" points="250,150 150,100 150,150"
                                      fill="yellow" fill-opacity="0.3" stroke="yellow"></polygon>
-
-
-                            <%--                            точка при тыке на график--%>
-<%--                            <circle r="5" cx="150" cy="150" id="target-dot" fill="#4DB6AC"></circle>--%>
-
                             <jsp:include page="dots.jsp"/>
 
                         </svg>
@@ -91,121 +87,50 @@
 
             <div class="col-lg-4 text-center">
                 <p>Выберите R:</p>
-                <!--                <select class="neo-select custom-select" id="select-r">-->
-                <!--                    <option value="1">1</option>-->
-                <!--                    <option value="1.5">1.5</option>-->
-                <!--                    <option value="2">2</option>-->
-                <!--                    <option value="2.5">2.5</option>-->
-                <!--                    <option value="3">3</option>-->
-                <!--                </select>-->
 
                 <div class="row">
                     <div class="col-2 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">-4</button>-->
                         <label class="checkbox-label btn btn-secondary">
                             <input type="checkbox" class="checkbox" name="options" id="1" autocomplete="off"> 1
                         </label>
                     </div>
                     <div class="col-2 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">-3</button>-->
                         <label class="checkbox-label btn btn-secondary">
                             <input type="checkbox" class="checkbox" name="options" id="1.5" autocomplete="off"> 1.5
                         </label>
                     </div>
                     <div class="col-2 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">-2</button>-->
                         <label class="checkbox-label btn btn-secondary">
                             <input type="checkbox" class="checkbox" name="options" id="2" autocomplete="off"> 2
                         </label>
                     </div>
                     <div class="col-2 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">-1</button>-->
                         <label class="checkbox-label btn btn-secondary">
                             <input type="checkbox" class="checkbox" name="options" id="2.5" autocomplete="off"> 2.5
                         </label>
                     </div>
                     <div class="col-2 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">0</button>-->
                         <label class="checkbox-label btn btn-secondary">
                             <input type="checkbox" class="checkbox" name="options" id="3" autocomplete="off"> 3
                         </label>
                     </div>
-                    <!--                </div>-->
-                    <!--                <div class="row">-->
-                    <!--                    <div class="col-6 text-center">-->
-                    <!--                        &lt;!&ndash;                        <button type="button" class="btn-x neo-btn">-1</button>&ndash;&gt;-->
-                    <!--                        <label class="btn btn-secondary">-->
-                    <!--                            <input type="checkbox" name="options" id="option2" autocomplete="off"> -0.5-->
-                    <!--                        </label>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="col-6 text-center">-->
-                    <!--                        &lt;!&ndash;                        <button type="button" class="btn-x neo-btn">0</button>&ndash;&gt;-->
-                    <!--                        <label class="btn btn-secondary">-->
-                    <!--                            <input type="checkbox" name="options" id="option2" autocomplete="off"> 0-->
-                    <!--                        </label>-->
-                    <!--                    </div>-->
                 </div>
 
 
                 <p>Выберите X:</p>
 
-                <!--                <div class="btn-group btn-group-toggle" data-toggle="buttons">-->
-                <!--                    <label class="btn btn-secondary">-->
-                <!--                        <input type="radio" name="options" id="option1" autocomplete="off"> Active-->
-                <!--                    </label>-->
-                <!--                    <label class="btn btn-secondary">-->
-                <!--                        <input type="radio" name="options" id="option2" autocomplete="off"> Radio-->
-                <!--                    </label>-->
-                <!--                    <label class="btn btn-secondary">-->
-                <!--                        <input type="radio" name="options" id="option3" autocomplete="off"> Radio-->
-                <!--                    </label>-->
-                <!--                    <label class="btn btn-secondary">-->
-                <!--                        <input type="radio" name="options" id="option1" autocomplete="off"> Active-->
-                <!--                    </label>-->
-                <!--                    <label class="btn btn-secondary">-->
-                <!--                        <input type="radio" name="options" id="option2" autocomplete="off"> Radio-->
-                <!--                    </label>-->
-                <!--                    <label class="btn btn-secondary">-->
-                <!--                        <input type="radio" name="options" id="option3" autocomplete="off"> Radio-->
-                <!--                    </label>-->
-                <!--                    <label class="btn btn-secondary">-->
-                <!--                        <input type="radio" name="options" id="option1" autocomplete="off"> Active-->
-                <!--                    </label>-->
-                <!--                    <label class="btn btn-secondary">-->
-                <!--                        <input type="radio" name="options" id="option2" autocomplete="off"> Radio-->
-                <!--                    </label>-->
-                <!--                    <label class="btn btn-secondary">-->
-                <!--                        <input type="radio" name="options" id="option3" autocomplete="off"> Radio-->
-                <!--                    </label>-->
-                <!--                </div>-->
-
-                <!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-4</button>-->
-                <!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-3</button>-->
-                <!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-2</button>-->
-                <!--                    <div class="w-100"></div>-->
-                <!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-1</button>-->
-                <!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">0</button>-->
-                <!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">1</button>-->
-                <!--                    <div class="w-100"></div>-->
-                <!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">2</button>-->
-                <!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">3</button>-->
-                <!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">4</button>-->
-
                 <div class="row">
                     <div class="col-4 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">-4</button>-->
                         <label class="radio-label btn btn-secondary">
                             <input type="radio" name="options" class="radio" id="radio1" autocomplete="off"> -2
                         </label>
                     </div>
                     <div class="col-4 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">-3</button>-->
                         <label class="radio-label btn btn-secondary">
                             <input type="radio" name="options" class="radio" id="radio2" autocomplete="off"> -1.5
                         </label>
                     </div>
                     <div class="col-4 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">-2</button>-->
                         <label class="radio-label btn btn-secondary">
                             <input type="radio" name="options" class="radio" id="radio3" autocomplete="off"> -1
                         </label>
@@ -213,19 +138,16 @@
                 </div>
                 <div class="row">
                     <div class="col-4 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">-1</button>-->
                         <label class="radio-label btn btn-secondary">
                             <input type="radio" name="options" class="radio" id="radio4" autocomplete="off"> -0.5
                         </label>
                     </div>
                     <div class="col-4 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">0</button>-->
                         <label class="radio-label btn btn-secondary">
                             <input type="radio" name="options" class="radio" id="radio5" autocomplete="off"> 0
                         </label>
                     </div>
                     <div class="col-4 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">1</button>-->
                         <label class="radio-label btn btn-secondary">
                             <input type="radio" name="options" class="radio" id="radio6" autocomplete="off"> 0.5
                         </label>
@@ -233,19 +155,16 @@
                 </div>
                 <div class="row">
                     <div class="col-4 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">2</button>-->
                         <label class="radio-label btn btn-secondary">
                             <input type="radio" name="options" class="radio" id="radio7" autocomplete="off"> 1
                         </label>
                     </div>
                     <div class="col-4 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">3</button>-->
                         <label class="radio-label btn btn-secondary">
                             <input type="radio" name="options" class="radio" id="radio8" autocomplete="off"> 1.5
                         </label>
                     </div>
                     <div class="col-4 text-center">
-                        <!--                        <button type="button" class="btn-x neo-btn">4</button>-->
                         <label class="radio-label btn btn-secondary">
                             <input type="radio" name="options" class="radio" id="radio9" autocomplete="off"> 2
                         </label>
@@ -281,8 +200,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center">
-                <%--                Здесь надо вставить ссылку на гитхаб вместо "#" --%>
-                <a href=#>гитхаб</a>
+                <a href=https://github.com/foryourselfand/programming_web_lab2>гитхаб</a>
             </div>
         </div>
     </div>
