@@ -21,9 +21,9 @@ public class AreaCheckServlet extends HttpServlet {
 		double r = 0;
 		
 		try {
-			x = Double.parseDouble(request.getParameter("x"));
-			y = Double.parseDouble(request.getParameter("y"));
-			r = Double.parseDouble(request.getParameter("r"));
+			x = Utils.getDoubleParameter(request, "x");
+			y = Utils.getDoubleParameter(request, "y");
+			r = Utils.getDoubleParameter(request, "r");
 		} catch (NumberFormatException ignored) {
 		}
 		
