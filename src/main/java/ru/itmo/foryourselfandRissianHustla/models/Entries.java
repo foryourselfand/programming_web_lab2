@@ -1,4 +1,4 @@
-package ru.itmo.angry_beavers.models;
+package ru.itmo.foryourselfandRissianHustla.models;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;

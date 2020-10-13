@@ -1,4 +1,4 @@
-package ru.itmo.angry_beavers.servlets;
+package ru.itmo.foryourselfandRissianHustla.servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

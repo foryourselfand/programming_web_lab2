@@ -11,7 +11,7 @@
     </tr>
     </thead>
     <tbody>
-        <jsp:useBean id="entries" scope="session" class="ru.itmo.angry_beavers.models.Entries"/>
+        <jsp:useBean id="entries" scope="session" class="ru.itmo.foryourselfandRissianHustla.models.Entries"/>
         <c:forEach var="entry" items="${entries.entries}">
             <tr class="table-row">
                 <td>${entry.x}</td>

@@ -1,7 +1,7 @@
-package ru.itmo.angry_beavers.servlets;
+package ru.itmo.foryourselfandRissianHustla.servlets;
 
-import ru.itmo.angry_beavers.models.Entries;
-import ru.itmo.angry_beavers.models.Entry;
+import ru.itmo.foryourselfandRissianHustla.models.Entries;
+import ru.itmo.foryourselfandRissianHustla.models.Entry;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -44,23 +44,6 @@ public class AreaCheckServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
-	}
-	
-	private boolean getResultOld(double x, double y, double r) {
-		boolean qOne = x >= 0 && y >= 0;
-		if (qOne && y * y + x * x <= r * r) {
-			return true;
-		}
-		
-		// 2 quarter
-		boolean qTwo = x <= 0 && y >= 0;
-		if (qTwo && x >= - r / 2 && y <= 2 * x + r) {
-			return true;
-		}
-		
-		// 4 quarter
-		boolean qFour = x >= 0 && y <= 0;
-		return qFour && x <= r / 2 && y >= - r;
 	}
 	
 	private boolean getResult(double x, double y, double r) {
